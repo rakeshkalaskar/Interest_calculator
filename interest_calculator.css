@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 132, 75),rgb(215, 223, 215),rgb(72, 240, 100));
+}
+.container{
+    min-width: 400px;
+    box-shadow: 1px 1px 5px rgb(155, 125, 125);
+    padding: 15px;
+    background-color: rgb(147, 226, 255);
+
+}
+.menu{
+    display: flex;
+}
+.menu-item{
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 15px;
+    /* color: white;
+    background-color: rgb(119, 255, 119);
+    font-size: 16px;
+    border-radius: 20px; */
+    font-weight: bold;
+    transition-property: all 0.3s ease out;
+}
+.menu-item:hover{
+    /* color: white;
+    background-color: rgb(119, 255, 119); */
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.active{
+    color: white;
+    background-color: rgb(119, 255, 119);
+    font-size: 16px;
+    border-radius: 20px;
+}
+form{
+    margin-top: 20px;
+    border: 1px solid rgb(228, 192, 192);
+}
+.form-item label{
+    display: block;
+    margin-bottom: 10px;
+}
+.form-item input{
+    min-height: 30px;
+    padding: 5px;
+    border: 1px solid rgb(196, 179, 179);
+    border-radius: 5px;
+}
+.required{
+    color: red;
+}
+.form-item input::placeholder{
+    color: rgba(50, 61, 36, 0.911);
+}
+
+.btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 133, 0);
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid darkblue;
+}
+.btn-wraper{
+    text-align: center;
+}
+.result{
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 24px;
+}
